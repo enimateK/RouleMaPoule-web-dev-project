@@ -1,0 +1,17 @@
+<ul class="nav nav-pills nav-stacked">
+
+  {% for item in rss.channel.item|slice(0, 3) %}
+
+    <li>
+
+      <a href="{{ item.link }}">
+
+        {{ item.title }}
+
+      </a>
+
+    </li>
+
+  {% endfor %}
+
+</ul>

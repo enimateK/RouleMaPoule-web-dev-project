@@ -1,0 +1,20 @@
+{% extends "IHMCovoiturageBundle::layout.html.twig" %}
+
+{% block title %}
+  {{ 'advert.modif'|trans }} - {{ parent() }}
+{% endblock %}
+
+{% block ihmcovoit_body %}
+
+  <h2>{{ 'advert.modif'|trans }}</h2>
+
+  {{ include("IHMCovoiturageBundle:Advert:form.html.twig") }}
+  <p>
+    <a href="{{ path('ihm_covoiturage_view', {'id': advert.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      {{ 'advert.suppr.return'|trans }}
+    </a>
+  </p>
+
+
+{% endblock %}

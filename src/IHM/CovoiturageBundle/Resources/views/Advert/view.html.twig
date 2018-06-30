@@ -1,0 +1,54 @@
+{% extends "IHMCovoiturageBundle::layout.html.twig" %}
+
+{% block title %}
+  {{ 'advert.view.title'|trans }} - {{ parent() }}
+{% endblock %}
+
+
+{% block ihmcovoit_body %}
+  <h2>{{ advert.title }}</h2>
+
+  <i>{{ 'index.home.par'|trans }} {{ advert.user }}, {{ 'index.home.le'|trans }} {{ advert.date|date('d/m/Y') }}</i>
+  
+  <div class="well">
+  <p>
+    {{ 'advert.view.depart'|trans }} <strong>{{ advert.villeDepart.name }} </strong> <br />
+    {{ 'advert.view.arrivee'|trans }} <strong>{{ advert.villeArrivee.name }}</strong> <br />
+    {{ 'advert.view.date'|trans }} <strong>{{ advert.dateDepart|date('d/m/Y') }}</strong><br /> 
+    {{ 'advert.view.places'|trans }} <strong>{{ advert.nbPlaces }}</strong> <br />
+    {{ 'advert.view.heure'|trans }} <strong>{{ advert.heureDepart|date('g:i') }}</strong> <br />
+    {{ 'advert.view.fumeur'|trans }} <strong> {% if advert.fumeur %} Oui {% else %} Non {% endif %}</strong> <br />
+    {{ 'advert.view.prix'|trans }} <strong>{{ advert.prixTrajet }}€</strong>
+  </p>
+  <p>
+    <strong>{{ 'advert.view.message'|trans }}</strong> <br />
+    {{ advert.content }}
+  </p>
+   
+   
+  </div>
+  
+  <p>
+     <a href="{{ path('ihm_covoiturage_addinscrip', {'id': advert.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-ok"></i>
+      {{ 'advert.view.inscrip'|trans }}
+    </a>
+    
+    <a href="{{ path('ihm_covoiturage_home') }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      {{ 'advert.view.return'|trans }}
+    </a>
+
+    <a href="{{ path('ihm_covoiturage_edit', {'id': advert.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-edit"></i>
+      {{ 'advert.view.modif'|trans }}
+    </a>
+
+    <a href="{{ path('ihm_covoiturage_delete', {'id': advert.id}) }}" class="btn btn-danger">
+      <i class="glyphicon glyphicon-trash"></i>
+      {{ 'advert.view.suppr'|trans }}
+    </a>
+  </p>
+
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "IHMCovoiturageBundle::layout.html.twig" %}
+
+{% block title %}
+  {{ 'index.home'|trans }} - {{ parent() }}
+{% endblock %}
+
+{% block ihmcovoit_body %}
+  <h2>{{ 'index.home.h2'|trans }}</h2>
+  <ul>
+    {% for advert in listAdverts %}
+      <li>
+        <a href="{{ path('ihm_covoiturage_view', {'id': advert.id}) }}">
+         {{ advert.title }}
+        </a>
+        {{ 'index.home.par'|trans }} {{ advert.user }},
+        {{ 'index.home.le'|trans }} {{ advert.date|date('d/m/Y') }}
+      </li>
+    {% else %}
+      <li>{{ 'index.home.empty'|trans }}</li>
+    {% endfor %}
+    
+  </ul>
+  <ul class="pagination">
+    {% for pa in range(1, nbPages) %}
+        <li{% if pa == page %} class="active" {% endif %}>
+            <a href="{{ path('ihm_covoiturage_home', {'page' : pa}) }}">{{ pa }}</a>
+        </li>
+    {% endfor %}
+  
+  </ul>
+{% endblock %}

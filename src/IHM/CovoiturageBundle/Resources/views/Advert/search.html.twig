@@ -1,0 +1,11 @@
+{% extends "IHMCovoiturageBundle::layout.html.twig" %}
+
+{% block title %}
+  {{ 'advert.search.search'|trans }}
+{% endblock %}
+
+{% block ihmcovoit_body %}
+  <h2>{{ 'advert.search.search'|trans }}</h2>
+    {{ include("IHMCovoiturageBundle:Advert:form.html.twig") }}
+{% endblock %}
+

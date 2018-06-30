@@ -1,0 +1,45 @@
+advert.ajout: Ajouter une annonce
+advert.suppr: Supprimer une annonce
+advert.suppr.confirm: Etes-vous sur de voulair supprimer l'annonce 
+advert.suppr.return: Retourner à l'annonce
+advert.suppr.delete: Supprimer
+advert.modif: Modifier une annonce
+index.home: Accueil
+index.home.h2: Liste des annonces
+index.home.par: par
+index.home.le: le
+index.home.empty: Aucune annonce.
+advert.search: Resultat de la recherche
+advert.search.noresults: Aucune annonce ne correspond à votre recherche.
+advert.search.search: Recherche
+advert.view.title: Visionnage d'une annonce
+advert.view.depart: 'Depart :'
+advert.view.arrivee: 'Arrivée :'
+advert.view.date: 'Date :'
+advert.view.places: 'Places :'
+advert.view.heure: 'Heure :'
+advert.view.fumeur: 'Fumeur :'
+advert.view.prix: 'Prix :'
+advert.view.message: 'Message :'
+advert.view.inscrip: Inscription
+advert.view.return: Retour à la liste
+advert.view.modif: Modifier cette annonce
+advert.view.suppr: Supprimer cette annonce
+advert.viewadverts: Mes annonces
+advert.viewinscrips: Mes inscriptions
+
+site.devise: Quelle sera votre prochaine destination ?
+site.bonjour: Bonjour
+site.annonces: Voir mes annonces
+site.inscrips: Voir mes inscriptions
+site.deco: Déconnexion
+site.con: Connexion
+site.regis: S'enregistrer
+site.home: Accueil
+site.advert: Ajouter une annonce
+site.search: Rechercher une annonce
+site.last: Dernières annonces
+site.meteo: Infos météo
+
+inscrip.ajout: S'incrire à ce covoiturage
+inscrip.attention: 'Attention : Si vous validez votre inscription, vous vous engagez à être présent le jour du trajet et à payer la somme due auprès du conducteur.'

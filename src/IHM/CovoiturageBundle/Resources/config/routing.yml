@@ -1,0 +1,47 @@
+ihm_covoiturage_home:
+    path:   /{page}
+    defaults: 
+        _controller: IHMCovoiturageBundle:Advert:index
+        page: 1
+    requirements:
+        page: \d*
+    
+ihm_covoiturage_view:
+    path:   /advert/{id}
+    defaults: {_controller: IHMCovoiturageBundle:Advert:view}
+    requirements: 
+        id: \d+
+    
+ihm_covoiturage_add:
+    path:   /add
+    defaults: {_controller: IHMCovoiturageBundle:Advert:add}
+    
+ihm_covoiturage_edit:
+    path:   /edit/{id}
+    defaults: {_controller: IHMCovoiturageBundle:Advert:edit}
+    requirements: 
+        id: \d+
+        
+ihm_covoiturage_delete:
+    path:   /delete/{id}
+    defaults: {_controller: IHMCovoiturageBundle:Advert:delete}
+    requirements: 
+        id: \d+
+        
+ihm_covoiturage_addinscrip:
+    path:   /inscripcovoiturage/{id}
+    defaults: {_controller: IHMCovoiturageBundle:Advert:addInscrip}
+    requirements: 
+        id: \d+
+
+ihm_covoiturage_viewadverts:
+    path:   /viewadverts
+    defaults: {_controller: IHMCovoiturageBundle:Advert:viewAdverts}
+
+ihm_covoiturage_viewinscrips:
+    path:   /viewinscrips
+    defaults: {_controller: IHMCovoiturageBundle:Advert:viewInscrips}
+    
+ihm_covoiturage_search:
+    path:   /search
+    defaults: {_controller: IHMCovoiturageBundle:Advert:search}

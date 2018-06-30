@@ -1,0 +1,14 @@
+{% extends "IHMCovoiturageBundle::layout.html.twig" %}
+
+
+{% block body %}
+
+  <h2>{{ 'inscrip.ajout'|trans }}</h2>
+
+  {{ include("IHMCovoiturageBundle:Advert:form.html.twig") }}
+
+  <p>
+    {{ 'inscrip.attention'|trans }}
+  </p>
+
+{% endblock %}

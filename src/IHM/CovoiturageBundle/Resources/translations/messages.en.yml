@@ -1,0 +1,45 @@
+advert.ajout: Add an advert
+advert.suppr: Delete an advert
+advert.suppr.confirm: Are you sure you want to delete the advert 
+advert.suppr.return: Back to the advert
+advert.suppr.delete: Delete
+advert.modif: Update an advert
+index.home: Home
+index.home.h2: List of the adverts
+index.home.par: by
+index.home.le: the
+index.home.empty: No advert.
+advert.search: Results
+advert.search.noresults: There is no advert that matches your research.
+advert.search.search: Search
+advert.view.title: View an advert
+advert.view.depart: 'Start:'
+advert.view.arrivee: 'End:'
+advert.view.date: 'Date:'
+advert.view.places: 'Places:'
+advert.view.heure: 'Hour:'
+advert.view.fumeur: 'Smoker:'
+advert.view.prix: 'Price:'
+advert.view.message: 'Message:'
+advert.view.inscrip: Inscription
+advert.view.return: Back to the list
+advert.view.modif: Update this advert
+advert.view.suppr: Delete this advert
+advert.viewadverts: My adverts
+advert.viewinscrips: My inscriptions
+
+site.devise: What will be your next destination ?
+site.bonjour: Hello
+site.annonces: View my adverts
+site.inscrips: View my inscriptions
+site.deco: Disconnect
+site.con: Sign in
+site.regis: Sign up
+site.home: Home
+site.advert: Add an advert
+site.search: Search
+site.last: Last adverts
+site.meteo: Weather informations
+
+inscrip.ajout: Apply for this car sharing
+inscrip.attention: 'Warning: If you validate this subscription, you will have to be present and you will owe the driver the amount of the travel.'

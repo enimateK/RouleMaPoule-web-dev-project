@@ -1,0 +1,27 @@
+{% extends "IHMCovoiturageBundle::layout.html.twig" %}
+
+{% block title %}
+  {{ 'advert.suppr'|trans }} - {{ parent() }}
+{% endblock %}
+
+{% block ihmcovoit_body %}
+
+  <h2>{{ 'advert.suppr'|trans }}</h2>
+
+  <p>
+     {{ 'advert.suppr.confirm'|trans }} "{{ advert.title }}" ?
+  </p>
+
+
+  <form action="{{ path('ihm_covoiturage_delete', {'id': advert.id}) }}" method="post">
+    <a href="{{ path('ihm_covoiturage_view', {'id': advert.id}) }}" class="btn btn-default">
+      <i class="glyphicon glyphicon-chevron-left"></i>
+      {{ 'advert.suppr.return'|trans }}
+    </a>
+
+    <input type="submit" value="{{ 'advert.suppr.delete'|trans }}" class="btn btn-danger" />
+    {{ form_rest(form) }}
+    
+  </form>
+
+{% endblock %}

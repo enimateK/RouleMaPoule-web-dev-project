@@ -1,0 +1,15 @@
+services:
+    ihm_covoiturage.email.inscrip_covoit_mail:
+        class: IHM\CovoiturageBundle\Email\InscripCovoitMail
+        arguments:
+            - "@mailer"
+
+
+    ihm_covoiturage.doctrine_listener.new_inscrip_covoit_listener:
+        class: IHM\CovoiturageBundle\DoctrineListener\NewInscripCovoitListener
+        arguments:
+          - "@ihm_covoiturage.email.inscrip_covoit_mail"
+        tags:
+          - { name: doctrine.event_listener, event: postPersist }
+      
+

@@ -1,0 +1,38 @@
+{% extends "IHMCovoiturageBundle::layout.html.twig" %}
+
+
+
+{% block title %}
+
+  {{ 'advert.viewinscrips'|trans }}
+
+{% endblock %}
+
+
+{% block ihmcovoit_body %}
+
+
+  <h2>{{ 'advert.viewinscrips'|trans }}</h2>
+
+
+ <ul class="nav nav-pills nav-stacked">
+
+  {% for inscrip in inscrips %}
+
+    <li>
+
+      <a href="{{ path('ihm_covoiturage_view', {'id': inscrip.advert.id}) }}">
+
+        {{ inscrip.advert.title }}
+
+      </a>
+
+    </li>
+
+  {% endfor %}
+
+</ul>
+
+  
+
+{% endblock %}
